@@ -1,7 +1,5 @@
 import React from 'react'
 import styles from './styles.module.css'
-import { useTitulo } from '../../../hooks'
-import banner2 from '../../../assets/banner2.svg'
 
 export default function Card2({ props }) {
 
