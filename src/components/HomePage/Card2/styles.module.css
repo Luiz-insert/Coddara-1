@@ -1,0 +1,567 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    
+    
+}
+
+
+
+.groupPart1, .groupPart2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+    
+}
+
+.groupPart3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+
+}
+
+.imgBanner2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-image: url('../../../assets/stacked.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    padding: 0 0 0 4rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+.rightSide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}   
+
+.img_aux2 {
+    width: 200px;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.modalGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.modalText {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.modal1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 90%;
+    background-color: #179e39;
+    color: #f5f5f5;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 90%;
+    background-color: white;
+    color: #ffd000;
+    border-radius: 0;
+    border: 1px solid #ffd000;
+    transition: 0.3s;
+}
+
+.modal3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 90%;
+    background-color: #ff7dba;
+    color: #f5f5f5;
+    border-radius: 5rem;
+    border: 0px solid #f7d7ff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.modal1:hover {
+    cursor: pointer;
+    background-color: #39d15f;
+    transition: all 0.3s ease-in-out;
+    width: 95%;
+}
+
+.modal2:hover {
+    cursor: pointer;
+    background-color: #ffd000;
+    color: white;
+    border: 1px solid white;
+    transition: 0.3s;
+    width: 95%;
+}
+
+.modal3:hover {
+    cursor: pointer;
+    background-color: #dd54ff;
+    color: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 6px #f7d7ff;
+    width: 95%;
+}
+
+
+
+
+
+@keyframes circulaElemento {
+    0% {
+        box-shadow: 
+
+            0 0 4px rgba(0, 255, 0, 1),
+            0 0 6px rgb(255, 255, 255);
+
+    }
+    33% {
+        box-shadow: 
+
+            0 0 4px rgba(0, 0, 255, 1),
+            0 0 6px rgb(255, 255, 255);
+    }
+    66% {
+        box-shadow: 
+            0 0 4px rgba(255, 0, 0, 1),
+            0 0 6px rgb(255, 255, 255);
+
+    }
+    100% {
+        box-shadow: 
+
+            0 0 4px rgba(0, 255, 0, 1),
+            0 0 6px rgb(255, 255, 255);
+
+    }
+}
+
+.groupPartUp {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+}
+
+.sideBarAux {
+    width: 8px;
+    height: 400px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.groupRight {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.bgRight {
+    width: 400px;
+    height: 100%;
+}
+
+.bgRight1 {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 1rem 0 0 1rem;
+    padding: 8px;
+    transition: all 0.3s ease-in-out;
+    border-right: 0px;
+}
+
+.bgRight1:hover {
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.bgRight2 {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 1rem 0 0 1rem;
+    padding: 8px;
+    transition: all 0.3s ease-in-out;
+    border-right: 0px;
+}
+
+.bgRight2:hover {
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.bgRight3 {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 1rem 0 0 1rem;
+    padding: 8px;
+    transition: all 0.3s ease-in-out;
+    border-right: 0px;
+}   
+
+.bgRight3:hover {
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.bgRight4 {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 1rem 0 0 1rem;
+    padding: 8px;
+    transition: all 0.3s ease-in-out;
+    border-right: 0px;
+}
+
+.bgRight4:hover {
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.imageBox {
+    width: 128px;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 8px;
+    background-color: rgb(255, 255, 255, 0.1);
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.groupImage {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    padding: 2rem;
+    
+}
+
+.imageSpaLogo {
+    width: 3rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.groupTitle {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+    border: 0px solid #454545;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.title2 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #b4b4b4;
+    background-color: transparent;
+    border: 0px solid #454545;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.description {
+    font-weight: lighter;
+}
+
+.groupPartDown {
+    display: flex;
+    width: 100%;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.waterMark {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.waterMarkText1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #454545;
+}
+
+.waterMarkText2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #767676;
+}
+
+.waterMarkLine {
+    width: 1px;
+    height: 1rem;
+    background-color: #454545;
+}
+
+.image1 {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+}
+
+.title1 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* From Uiverse.io by Praashoo7 */ 
+.flipCard {
+    background-color: transparent;
+    font-family: 'Questrial', sans-serif;
+    width: 240px;
+    height: 154px;
+    perspective: 1000px;
+    color: white;
+  }
+  
+  .heading8264 {
+    position: absolute;
+    letter-spacing: .2em;
+    font-size: 0.5em;
+    top: 2em;
+    left: 18.6em;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+  }
+  
+  .chip {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+  }
+  
+  .contactless {
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+  }
+  
+  .number {
+    position: absolute;
+    font-weight: bold;
+    font-size: .6em;
+    top: 8.3em;
+    left: 1.6em;
+  }
+  
+  .validThru {
+    position: absolute;
+    font-weight: bold;
+    top: 635.8em;
+    font-size: .01em;
+    left: 140.3em;
+  }
+  
+  .date8264 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 13.6em;
+    left: 3.2em;
+  }
+  
+  .name {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 16.1em;
+    left: 2em;
+  }
+  
+  .strip {
+    position: absolute;
+    background-color: black;
+    width: 15em;
+    height: 1.5em;
+    top: 2.4em;
+    background: repeating-linear-gradient(
+      45deg,
+      #303030,
+      #303030 10px,
+      #202020 10px,
+      #202020 20px
+    );
+  }
+  
+  .mstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 8em;
+    height: 0.8em;
+    top: 5em;
+    left: .8em;
+    border-radius: 2.5px;
+  }
+  
+  .sstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 4.1em;
+    height: 0.8em;
+    top: 5em;
+    left: 10em;
+    border-radius: 2.5px;
+  }
+  
+  .code {
+    font-weight: bold;
+    text-align: center;
+    margin: .2em;
+    color: black;
+  }
+  
+  .flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+  }
+  
+  .flipCardFront, .flipCardBack {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flipCardFront {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: rgb(255, 255, 255, 0.1);
+  }
+  
+  .flipCardBack {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: rgb(255, 255, 255, 0.1);
+    transform: rotateY(180deg);
+  }

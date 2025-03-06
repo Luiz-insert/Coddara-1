@@ -1,0 +1,459 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.groupPart0 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+}
+
+.groupPart1, .groupPart2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.groupPart1 {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.groupPart2 {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.groupLabelContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid #454545;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.groupLabel {
+    display: flex;
+    align-items: center;
+    font-family: 'Questrial', sans-serif;
+}
+
+.groupPart3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+
+}
+
+.img2 {
+    width: 24px;
+}
+
+.img_aux2 {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+
+}
+
+.modalGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.modalText {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.modal1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 90%;
+    background-color: #179e39;
+    color: #f5f5f5;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 90%;
+    background-color: white;
+    color: #ffd000;
+    border-radius: 0;
+    border: 1px solid #ffd000;
+    transition: 0.3s;
+}
+
+.modal3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 90%;
+    background-color: #ff7dba;
+    color: #f5f5f5;
+    border-radius: 5rem;
+    border: 0px solid #f7d7ff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.modal1:hover {
+    cursor: pointer;
+    background-color: #39d15f;
+    transition: all 0.3s ease-in-out;
+    width: 95%;
+}
+
+.modal2:hover {
+    cursor: pointer;
+    background-color: #ffd000;
+    color: white;
+    border: 1px solid white;
+    transition: 0.3s;
+    width: 95%;
+}
+
+.modal3:hover {
+    cursor: pointer;
+    background-color: #dd54ff;
+    color: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 6px #f7d7ff;
+    width: 95%;
+}
+
+
+
+
+
+@keyframes circulaElemento {
+    0% {
+        box-shadow: 
+
+            0 0 4px rgba(0, 255, 0, 1),
+            0 0 6px rgb(255, 255, 255);
+
+    }
+    33% {
+        box-shadow: 
+
+            0 0 4px rgba(0, 0, 255, 1),
+            0 0 6px rgb(255, 255, 255);
+    }
+    66% {
+        box-shadow: 
+            0 0 4px rgba(255, 0, 0, 1),
+            0 0 6px rgb(255, 255, 255);
+
+    }
+    100% {
+        box-shadow: 
+
+            0 0 4px rgba(0, 255, 0, 1),
+            0 0 6px rgb(255, 255, 255);
+
+    }
+}
+
+.groupPartUp {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+}
+
+.sideBarAux {
+    width: 8px;
+    height: 100px;
+    background-color: #454545;
+}
+
+.groupImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    
+}
+
+.imageSpaLogo {
+    width: 3rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.groupTitle {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+    border: 0px solid #454545;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    text-align: start;
+}
+
+.img1 {
+    width: 24px;
+}
+
+.domainContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    background-color: #404040;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.description {
+    font-weight: lighter;
+}
+
+.groupPartDown {
+    display: flex;
+    width: 100%;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.waterMark {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.waterMarkText1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #454545;
+}
+
+.waterMarkText2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #767676;
+}
+
+.waterMarkLine {
+    width: 1px;
+    height: 1rem;
+    background-color: #454545;
+}
+
+.controlPanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 1rem;
+}
+
+.ceoPart2 {
+    display: flex;
+    justify-content: center;
+}
+
+.controlButton {
+    width: 20px;
+    height: 20px;
+    background-color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controlButton:hover {
+    background-color: #777;
+}
+
+.controlSlider {
+    width: 100px;
+    height: 10px;
+    background-color: #555;
+    border-radius: 5px;
+    position: relative;
+}
+
+.controlSlider::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background-color: #777;
+    border-radius: 5px;
+    left: 0;
+    transition: left 0.3s;
+}
+
+.controlSlider:hover::before {
+    left: 80px;
+}
+
+.textTitles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Questrial', sans-serif;
+    font-size: 2rem;
+    color: #454545;
+    margin-top: 1rem;
+    padding: 0 4rem;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    position: relative;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    z-index: 1;
+    color: inherit;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    z-index: -1;
+    animation: progressBar cubic-bezier(0.55, 0.055, 0.675, 0.19) 10s infinite;
+}
+
+@keyframes progressBar {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    90% {
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 0;
+        background-color: #1eff00;
+    }
+}
+
+.pingTitle {
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.loading svg polyline {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .loading svg polyline.back {
+    fill: none;
+    stroke: #ffffff00;
+  }
+  
+  .loading svg polyline.front {
+    fill: none;
+    stroke: #53ff4d;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 1.4s linear infinite;
+  }
+  
+  @keyframes dash_682 {
+    72.5% {
+      opacity: 0;
+    }
+  
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  

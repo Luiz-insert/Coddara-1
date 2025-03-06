@@ -1,0 +1,62 @@
+
+  .buttonContact {
+    background-color: #25D366;
+    border: 0px solid #25D366;
+    font-family: 'Questrial', sans-serif;
+    padding: 5px;
+    position: relative;
+    width: 6.5rem;
+    height: 2rem;
+    transition: 0.5s;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 0px 0px #119744;
+    transition: all ease 0.1s;
+  }
+
+  .buttonContact:hover {
+    cursor: pointer;
+  }
+
+  .buttonContact:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #666666;
+  }
+
+  .buttonContact:hover {
+    background-color: #25D366;
+    border: 0px solid #25D366;
+  }
+
+  .buttonContact p {
+    position: absolute;
+    top: 0.5em;
+    left: 1rem;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    font-weight: 200;
+    color: #fff;
+  }
+
+  .buttonContact svg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff;
+    opacity: 1;
+    
+  }
+
+  .buttonContact:hover svg {
+    opacity: 1;
+  }
+
+  .buttonContact:hover {
+    background-color: #25D366;
+  }

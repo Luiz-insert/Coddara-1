@@ -1,0 +1,121 @@
+
+.contentBackground {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    height: 420px;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.034);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 110px;
+    padding-bottom: 40px;
+
+}
+
+.contentBackgroundEffect {
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    background-size: 400% 400%;
+    height: 400px;
+    width: 95%;
+    margin-top: 120px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    transform: perspective(1000px) rotateX(2deg);
+    animation: gradientAnimation 10s linear infinite;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+
+        transform: scale3d(1, 1, 1);
+        transform: perspective(1000px) rotateX(2deg);
+   
+    }
+    33% {
+        background-position: 100% 50%;
+        transform: scale3d(0.9, 0.9, 0.9);
+        transform: perspective(1000px) rotateX(2deg);
+    }
+    66% {
+        background-position: 0% 50%;
+        transform: scale3d(0.9, 0.9, 0.9);
+        transform: perspective(1000px) rotateX(0deg);
+    }
+    50% {
+        background-position: 100% 50%;
+        transform: scale3d(0.9, 0.9, 0.9);
+        transform: perspective(1000px) rotateX(-2deg);
+        
+    }
+    100% {
+        background-position: 0% 0%;
+        transform: scale3d(1, 1, 1);
+        transform: perspective(1000px) rotateX(2deg);
+
+
+  
+    }
+}
+
+:root {
+    --cor1: hsla(236, 81%, 50%, 0.1);
+    --cor2: hsla(300, 76%, 48%, 0.1);
+    --cor3: hsla(177, 100%, 50%, 0.1);
+    --cor4: hsla(120, 82%, 49%, 0.1);
+}
+
+body {
+    animation: mudarCores 10s linear infinite;
+}
+
+.logoBanner {
+    width: 150px;
+    height: auto;
+}
+
+.groupText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.textBanner {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 600;
+    color: #454545;
+}
+

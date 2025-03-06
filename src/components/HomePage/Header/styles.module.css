@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #454545;
+    background-image: url('../../../assets/wave2.svg');
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.backgroundFade {
+    position: absolute;
+    width: 100%;
+    margin-top: 70px;
+    height: 4px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    background-size: 600% 100%;
+    animation: girarCores 10s linear infinite;
+    z-index: 2;
+    top: 0;
+}
+
+@keyframes girarCores {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.logo {
+    width: auto;
+    height: 40px;
+    animation: girarLogo 10s linear infinite;
+}
+
+@keyframes girarLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.groupLogo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 0 1.2rem;
+}
+
+.groupBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+
+    padding: 0 1.2rem;
+}
+
+.groupTitle {
+    height: 100%;
+}
+
+.title {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.btn1, .btn2, .btn3, .btn4 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+    background-color: #5a5a5a;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+    border-bottom: 1px solid #fff;
+    transform: scale(1.1);
+}
+
