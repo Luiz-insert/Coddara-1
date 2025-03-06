@@ -16,7 +16,7 @@ import services from '../../assets/group_services.png'
 import creditCard from '../../assets/credit.svg'
 import imgRoute from '../../assets/img_aux_route.svg'
 import imgApi from '../../assets/img_aux_api.svg'
-import lock from '../../assets/lock.svg'
+import lock from '../../assets/Lock.svg'
 import check_small from '../../assets/check_small.svg'
 
 import srv1 from '../../assets/srv1.svg'
