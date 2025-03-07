@@ -397,22 +397,6 @@
     animation: progressBar cubic-bezier(0.55, 0.055, 0.675, 0.19) 10s infinite;
 }
 
-@keyframes progressBar {
-    0% {
-        width: 0;
-        opacity: 1;
-    }
-    90% {
-        width: 100%;
-        opacity: 1;
-    }
-    100% {
-        width: 100%;
-        opacity: 0;
-        background-color: #1eff00;
-    }
-}
-
 .pingTitle {
     width: 16px;
     height: 16px;
